@@ -17,12 +17,50 @@
     UTILITIES
  *************************************************/
 
+/* Containers */
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Flex */
+
+.flex{
+    display: flex;
 }
 
 
 /*************************************************
     CONTENT
  *************************************************/
+.web-app{
+    height: 100vh;
+    background-color: greenyellow;
+}
+
+aside{
+    flex-basis: 100px;
+    background-color: black;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 15vh;
+    background-color: grey;
+}
+
+main{
+    flex-grow: 1;
+    background-color: orchid;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(75, 74, 74, 0.325);
+}
