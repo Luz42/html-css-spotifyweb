@@ -60,7 +60,7 @@ img{
 aside{
     /* flex-basis: 100px; */
     background-color: black;
-    height: 88vh;
+    height: 92vh;
 }
 
 aside>*{
@@ -95,13 +95,14 @@ main{
     flex-grow: 1;
     position: relative;
     background-color: orchid;
-    padding-top: 15vh;
+    padding-top: 8vh;
+    overflow-y: auto;
 }
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
-    height: 15vh;
+    height: 8vh;
     width: 100%;
     background-color: rgba(75, 74, 74, 0.325);
 }
@@ -121,7 +122,7 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 12vh;
+    height: 8vh;
     background-color: grey;
 }
 
@@ -158,15 +159,27 @@ footer .column.center{
         display: none;
     }
 
+    main .column{
+        width: calc(100% / 3);
+    }
+
 
  }
 
  @media screen and (min-width: 900px) {
     
+    main .column{
+        width: calc(100% / 4);
+    }
+
  }
 
  @media screen and (min-width: 1200px) {
     
+    main .column{
+        width: calc(100% / 5);
+    }
+
  }
 
  /* DEBUG */
@@ -188,4 +201,8 @@ footer .column.center{
  .debug .column{
     border: dashed red;
 
+ }
+
+ .debug section{
+    border: dashed rgb(0, 255, 13);
  }
