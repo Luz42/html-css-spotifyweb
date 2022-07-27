@@ -22,6 +22,7 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+/* /Containers */
 
 /* Flex */
 
@@ -29,6 +30,15 @@
     display: flex;
 }
 
+.col-direction{
+    flex-direction: column;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+/* /Flex */
 
 /*************************************************
     CONTENT
@@ -38,10 +48,39 @@
     background-color: greenyellow;
 }
 
+/* SIDE-BAR */
+
 aside{
-    flex-basis: 100px;
+    /* flex-basis: 100px; */
     background-color: black;
+    height: 85vh;
 }
+
+aside>*{
+    padding: 5px;
+}
+
+nav>*,
+.personal>*{
+    padding: 2px;
+}
+
+aside nav>figure{
+    width: 30px;
+}
+
+aside nav>figure img:nth-child(2),
+aside .row.playlist,
+aside a{
+    display: none;
+}
+
+
+aside i{
+    color: #d2d2d2;
+}
+
+/* end SIDE-BAR */
 
 footer{
     width: 100%;
@@ -72,6 +111,21 @@ header{
 
  @media screen and (min-width: 600px) {
     
+    aside nav>figure{
+        width: 200px;
+    }
+
+    aside nav>figure img:nth-child(2),
+    aside a,
+    aside .row.playlist{
+        display: inline-block;
+    }
+
+    aside nav>figure img:first-child{
+        display: none;
+    }
+
+
  }
 
  @media screen and (min-width: 900px) {
@@ -80,4 +134,12 @@ header{
 
  @media screen and (min-width: 1200px) {
     
+ }
+
+ /* DEBUG */
+
+ .debug .square{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
  }
