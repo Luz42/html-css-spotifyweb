@@ -53,8 +53,8 @@ footer{
 
 main{
     flex-grow: 1;
-    background-color: orchid;
     position: relative;
+    background-color: orchid;
 }
 
 header{
@@ -64,3 +64,20 @@ header{
     width: 100%;
     background-color: rgba(75, 74, 74, 0.325);
 }
+
+
+/*************************************************
+    MEDIA QUERY
+ *************************************************/
+
+ @media screen and (min-width: 600px) {
+    
+ }
+
+ @media screen and (min-width: 900px) {
+    
+ }
+
+ @media screen and (min-width: 1200px) {
+    
+ }
