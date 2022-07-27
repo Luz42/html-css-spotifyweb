@@ -9,6 +9,10 @@
 }
 /* end CSS RESET */
 
+img{
+    width: 100%;
+}
+
 /*************************************************
     SHARED
  *************************************************/
@@ -19,8 +23,7 @@
 
 /* Containers */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    
 }
 /* /Containers */
 
@@ -36,6 +39,10 @@
 
 .justify-between{
     justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 /* /Flex */
@@ -82,18 +89,13 @@ aside i{
 
 /* end SIDE-BAR */
 
-footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    height: 12vh;
-    background-color: grey;
-}
+/* MAIN */
 
 main{
     flex-grow: 1;
     position: relative;
     background-color: orchid;
+    padding-top: 15vh;
 }
 
 header{
@@ -104,7 +106,24 @@ header{
     background-color: rgba(75, 74, 74, 0.325);
 }
 
+main .column{
+    width: calc(100% / 2);
+}
+
+.card{
+    padding: 5%;
+}
+/* end MAIN */
+
 /* PLAYER */
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 12vh;
+    background-color: grey;
+}
 
 footer>.row.flex>*{
     flex-grow: 1;
@@ -152,12 +171,21 @@ footer .column.center{
 
  /* DEBUG */
 
- .debug .square{
-    width: 50px;
-    height: 50px;
-    background-color: brown;
+ .debug .height{
+    min-height: 100px;
+    background-color: blanchedalmond;
  }
 
  .debug footer>.row.flex>*{
     height: 12vh;
+ }
+
+ .debug .card{
+
+    background-color: indianred;
+ }
+
+ .debug .column{
+    border: dashed red;
+
  }
