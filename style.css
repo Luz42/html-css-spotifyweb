@@ -71,9 +71,14 @@ aside>*{
     padding: 5px;
 }
 
+aside .row{
+    display: flex;
+    justify-content: center;
+}
+
 nav>*,
 .personal>*{
-    padding: 2px;
+    padding: 2px 0;
 }
 
 aside nav>figure{
@@ -181,6 +186,10 @@ footer .column>.row{
 
     aside nav>figure img:first-child{
         display: none;
+    }
+
+    aside .row{
+        justify-content: flex-start;
     }
 
     main .column{
