@@ -47,7 +47,7 @@ h4{
 
 /* Containers */
 .container {
-    
+    padding: 0 5%;
 }
 /* /Containers */
 
@@ -99,7 +99,7 @@ aside .row{
 
 /* measures */
 
-nav>*,
+aside nav>*,
 .personal>*:not(hr),
 aside li{
     padding: 5px 0;
@@ -170,14 +170,13 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: grey;
+    background-color: #282828;
     color: white;
 }
 
-footer>.row.flex>*{
-    background-color: rgb(85, 85, 147);
+/* footer>.row.flex>*{
     border: dashed red ;
-}
+} */
 
 footer .column{
     flex-grow: 1;
@@ -185,7 +184,6 @@ footer .column{
 
 footer .column.center{
     flex-grow: 2;
-    background-color: rgb(131, 53, 53);
     align-items: center;
     justify-content: space-evenly;
 }
