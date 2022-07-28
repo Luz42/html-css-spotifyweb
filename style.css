@@ -83,24 +83,21 @@ h4{
     background-color: greenyellow;
 }
 
-/* SIDE-BAR */
+/******** SIDE-BAR ********/
 
 aside{
-    /* flex-basis: 100px; */
     background-color: black;
-    height: 92vh;
+    height: calc(100vh - 60px);
     font-size: 0.8rem;
     font-weight: bold;
 }
-
-/* aside>*{
-    padding: 5px;
-} */
 
 aside .row{
     display: flex;
     justify-content: center;
 }
+
+/* measures */
 
 nav>*,
 .personal>*:not(hr),
@@ -113,32 +110,34 @@ aside nav>figure{
     margin: 0 5px;
 }
 
-aside nav>figure img:nth-child(2),
-aside .row.playlist,
-aside a{
-    display: none;
-}
-
-.fa-circle-arrow-down{
-    font-size: 0.6rem;
-}
-
 aside i{
     color: #6e6e6e;
     align-self: center;
     font-size: 1.2rem;
 }
 
+.fa-circle-arrow-down{
+    font-size: 0.6rem;
+}
+
+/* measures */
+
+aside nav>figure img:nth-child(2),
+aside .row.playlist,
+aside a{
+    display: none;
+}
+
 aside hr{
-    border: solid 1px #6e6e6e;
+    border: #6e6e6e 1px solid;
     width: 85%;
     margin: 0 auto;
     display: none;
 }
 
-/* end SIDE-BAR */
+/******** end SIDE-BAR ********/
 
-/* MAIN */
+/******** MAIN ********/
 
 main{
     flex-grow: 1;
@@ -163,15 +162,16 @@ main .column{
 .card{
     padding: 5%;
 }
-/* end MAIN */
+/******** end MAIN ********/
 
-/* PLAYER */
+/******** PLAYER ********/
 
 footer{
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: grey;
+    font-size: 0.8rem;
 }
 
 footer>.row.flex>*{
@@ -179,13 +179,33 @@ footer>.row.flex>*{
     border: dashed red ;
 }
 
-footer .column.center{
+footer .column{
     flex-grow: 1;
+}
+
+footer .column.center{
+    flex-grow: 2;
     background-color: rgb(131, 53, 53);
     align-items: center;
     justify-content: space-evenly;
 }
 
+footer .column>.row{
+    align-items: center;
+}
+
+.player-left .icons>*{
+    display: block;
+    padding: 1px 0;
+    color: #6e6e6e;
+    margin-left: 10px;
+}
+
+footer i{
+    font-size: 1rem;
+}
+
+/* measures */
 .player-left figure{
     width: 40px;
 }
@@ -199,10 +219,13 @@ footer .column>.row>*{
     padding: 0 5px;
 }
 
-footer .column>.row{
-    align-items: center;
-}
+footer>.row.flex>*{
+    height: 60px;
+ }
+/* /measures */
 
+
+/* time-bar */
 footer .time-bar{
     width: 100%;
     justify-content: center;
@@ -211,12 +234,7 @@ footer .time-bar{
 footer input{
     width: 90%
 }
-
-footer>.row.flex>*{
-    height: 8vh;
- }
-
- /* TODO:CHANGE HEIGHT IN PX NOT VH */
+/* /time-bar */
 
 /* end PLAYER */
 
@@ -273,6 +291,9 @@ footer>.row.flex>*{
         display: block;
     }
 
+    footer .column{
+        flex-grow: 0;
+    }
  }
 
  @media screen and (min-width: 900px) {
@@ -291,8 +312,7 @@ footer>.row.flex>*{
 
  }
 
- @media screen and (max-height: 504px) {
-/* TODO: change min-height when give px to footer */
+ @media screen and (max-height: 525px) {
     aside ul{
         display: none;
     }
