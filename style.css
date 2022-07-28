@@ -160,8 +160,21 @@ header{
     position: fixed;
     top: 0;
     height: 8vh;
-    width: 100%;
+    width: calc(100% - 40px);
     background-color: rgba(75, 74, 74, 0.325);
+    padding-right: 20px;
+}
+
+header .upgrade{
+    height: 100%;
+    align-items: center;
+}
+
+.upgrade a{
+    display: inline-block;
+    border-radius: 25px;
+    border: solid 1px white;
+    padding: 10px 30px;
 }
 
 main .column{
@@ -323,6 +336,9 @@ footer input{
 
     aside li:nth-of-type(2)>*{
         vertical-align: middle;
+    }
+    header{
+        width: calc(100% - 210px);
     }
 
     .player-left,
