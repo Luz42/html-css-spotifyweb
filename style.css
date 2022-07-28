@@ -67,9 +67,9 @@ aside{
     height: 92vh;
 }
 
-aside>*{
+/* aside>*{
     padding: 5px;
-}
+} */
 
 aside .row{
     display: flex;
@@ -83,6 +83,7 @@ nav>*,
 
 aside nav>figure{
     width: 30px;
+    margin: 0 5px;
 }
 
 aside nav>figure img:nth-child(2),
@@ -206,6 +207,7 @@ footer>.row.flex>*{
 
     aside .row{
         justify-content: flex-start;
+        padding-left: 10px;
     }
 
     main .column{
