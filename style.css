@@ -45,6 +45,10 @@ img{
     flex-wrap: wrap;
 }
 
+.justify-end{
+    justify-content: end;
+}
+
 /* /Flex */
 
 /*************************************************
@@ -127,15 +131,31 @@ footer{
 }
 
 footer>.row.flex>*{
-    flex-grow: 1;
     background-color: rgb(85, 85, 147);
     border: dashed red ;
 }
 
 footer .column.center{
-    flex-grow: 2;
+    flex-grow: 1;
     background-color: rgb(131, 53, 53);
 }
+
+.player-left figure{
+    width: 40px;
+}
+
+footer .column>.row{
+    height: 100%;
+}
+
+footer .column>.row>*{
+    padding: 0 5px;
+}
+
+footer .column>.row{
+    align-items: center;
+}
+
 /* end PLAYER */
 
 
@@ -161,6 +181,10 @@ footer .column.center{
 
     main .column{
         width: calc(100% / 3);
+    }
+
+    footer .column>.row{
+    width: 210px;
     }
 
 
@@ -190,7 +214,7 @@ footer .column.center{
  }
 
  .debug footer>.row.flex>*{
-    height: 12vh;
+    height: 8vh;
  }
 
  .debug .card{
