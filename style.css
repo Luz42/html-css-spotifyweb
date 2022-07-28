@@ -99,7 +99,7 @@ aside .row{
 }
 
 nav>*,
-.personal>*,
+.personal>*:not(hr),
 aside li{
     padding: 5px 0;
 }
@@ -123,6 +123,12 @@ aside i{
     color: #6e6e6e;
     align-self: center;
     font-size: 1.2rem;
+}
+
+aside hr{
+    border: solid 1px #6e6e6e;
+    width: 85%;
+    margin: 0 auto;
 }
 
 /* end SIDE-BAR */
