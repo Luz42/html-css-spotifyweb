@@ -30,7 +30,9 @@ li{
     list-style: none;
 }
 
-h4{
+h4,
+h1,
+h3{
     color: white;
 }
 
@@ -143,9 +145,10 @@ aside hr{
 main{
     flex-grow: 1;
     position: relative;
-    background-color: orchid;
+    background-color: #141922;
     padding-top: 8vh;
     overflow-y: auto;
+    padding-bottom: 60px;
 }
 
 main ul{
@@ -166,8 +169,29 @@ main .column{
 }
 
 .card{
-    padding: 5%;
+    padding: 10px;
+    text-align: center;
 }
+
+main .text>*{
+    padding: 5% 0 ;
+}
+
+main .text-title>*{
+    padding-left: 10px;
+}
+
+main .text-title,
+main section{
+    padding: 3% 0;
+}
+
+main p{
+    color: #6e6e6e;
+    font-weight: bold;
+    padding: 2% 0;
+}
+
 
 main nav{
     max-width: 900px;
@@ -345,16 +369,16 @@ footer input{
     background-color: blanchedalmond;
  }
 
- .debug .card{
+ /* .debug .card{
 
     background-color: indianred;
- }
+ } */
 
- .debug .column{
+ /* .debug .column{
     border: dashed red;
 
  }
 
  .debug section{
     border: dashed rgb(0, 255, 13);
- }
+ } */
