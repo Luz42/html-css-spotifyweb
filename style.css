@@ -164,6 +164,14 @@ footer .column>.row{
     align-items: center;
 }
 
+footer .time-bar{
+    width: 100%;
+    justify-content: center;
+}
+
+footer input{
+    width: 90%
+}
 
 /* end PLAYER */
 
