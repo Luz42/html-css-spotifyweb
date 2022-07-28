@@ -41,13 +41,19 @@ h4{
     SHARED
  *************************************************/
 
+ aside .row,
+ main ul{
+    display: flex;
+    justify-content: center;
+}
+
 /*************************************************
     UTILITIES
  *************************************************/
 
 /* Containers */
 .container {
-    padding: 0 5%;
+    padding: 0 20px;
 }
 /* /Containers */
 
@@ -90,11 +96,6 @@ aside{
     height: calc(100vh - 60px);
     font-size: 0.8rem;
     font-weight: bold;
-}
-
-aside .row{
-    display: flex;
-    justify-content: center;
 }
 
 /* measures */
@@ -147,6 +148,11 @@ main{
     overflow-y: auto;
 }
 
+main ul{
+    column-gap: 5%;
+    row-gap: 5vh;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -161,6 +167,13 @@ main .column{
 
 .card{
     padding: 5%;
+}
+
+main nav{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3%;
+    font-weight: bold;
 }
 /******** end MAIN ********/
 
