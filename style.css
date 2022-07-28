@@ -30,6 +30,10 @@ li{
     list-style: none;
 }
 
+h4{
+    color: white;
+}
+
 
 
 
@@ -129,6 +133,7 @@ aside hr{
     border: solid 1px #6e6e6e;
     width: 85%;
     margin: 0 auto;
+    display: none;
 }
 
 /* end SIDE-BAR */
@@ -250,18 +255,22 @@ footer>.row.flex>*{
     }
 
     aside a,
-    aside li:first-of-type{
+    aside li:nth-of-type(2){
         line-height: 1.2rem;
         vertical-align: middle;
     }
 
-    aside li:first-of-type>*{
+    aside li:nth-of-type(2)>*{
         vertical-align: middle;
     }
 
     .player-left,
     .player-right{
     width: 210px;
+    }
+
+    aside hr{
+        display: block;
     }
 
  }
@@ -278,6 +287,14 @@ footer>.row.flex>*{
     
     main .column{
         width: calc(100% / 5);
+    }
+
+ }
+
+ @media screen and (max-height: 504px) {
+/* TODO: change min-height when give px to footer */
+    aside ul{
+        display: none;
     }
 
  }
