@@ -9,9 +9,29 @@
 }
 /* end CSS RESET */
 
+body{
+    font-family: 'Commissioner', sans-serif;
+}
+
 img{
     width: 100%;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:visited,
+a{
+    color: #6e6e6e;
+}
+
+li{
+    list-style: none;
+}
+
+
+
 
 /*************************************************
     SHARED
@@ -65,6 +85,8 @@ aside{
     /* flex-basis: 100px; */
     background-color: black;
     height: 92vh;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 /* aside>*{
@@ -77,8 +99,9 @@ aside .row{
 }
 
 nav>*,
-.personal>*{
-    padding: 8px 0;
+.personal>*,
+aside li{
+    padding: 5px 0;
 }
 
 aside nav>figure{
@@ -97,7 +120,9 @@ aside a{
 }
 
 aside i{
-    color: #d2d2d2;
+    color: #6e6e6e;
+    align-self: center;
+    font-size: 1.2rem;
 }
 
 /* end SIDE-BAR */
@@ -207,11 +232,25 @@ footer>.row.flex>*{
 
     aside .row{
         justify-content: flex-start;
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
-    main .column{
-        width: calc(100% / 3);
+    aside i{
+        margin-right: 5px;
+    }
+    
+    .fa-circle-arrow-down{
+        margin-left: 5px;
+    }
+
+    aside a,
+    aside li:first-of-type{
+        line-height: 1.2rem;
+        vertical-align: middle;
+    }
+
+    aside li:first-of-type>*{
+        vertical-align: middle;
     }
 
     .player-left,
