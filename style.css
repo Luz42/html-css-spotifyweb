@@ -88,7 +88,7 @@ h3{
  *************************************************/
 .web-app{
     height: 100vh;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 
 /******** SIDE-BAR ********/
@@ -350,7 +350,7 @@ footer input{
  @media screen and (min-width: 1200px) {
     
     main .column{
-        width: calc(100% / 5);
+        width: calc(100% / 6);
     }
 
  }
