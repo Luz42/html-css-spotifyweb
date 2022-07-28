@@ -171,7 +171,7 @@ footer{
     position: fixed;
     bottom: 0;
     background-color: grey;
-    font-size: 0.8rem;
+    color: white;
 }
 
 footer>.row.flex>*{
@@ -190,6 +190,10 @@ footer .column.center{
     justify-content: space-evenly;
 }
 
+footer .actions{
+    width: 210px;
+}
+
 footer .column>.row{
     align-items: center;
 }
@@ -201,8 +205,8 @@ footer .column>.row{
     margin-left: 10px;
 }
 
-footer i{
-    font-size: 1rem;
+.player-right{
+    font-size: 0.7rem;
 }
 
 /* measures */
@@ -213,6 +217,10 @@ footer i{
 .player-left,
 .player-right{
     height: 100%;
+}
+
+.player-right{
+    padding: 0 10px;
 }
 
 footer .column>.row>*{
@@ -243,7 +251,7 @@ footer input{
     MEDIA QUERY
  *************************************************/
 
- @media screen and (min-width: 600px) {
+ @media screen and (min-width: 630px) {
     
     aside nav>figure{
         width: 200px;
