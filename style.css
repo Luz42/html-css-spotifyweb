@@ -43,11 +43,6 @@ h3{
     SHARED
  *************************************************/
 
- aside .row,
- main ul{
-    display: flex;
-    justify-content: center;
-}
 
 /*************************************************
     UTILITIES
@@ -102,15 +97,24 @@ aside{
 
 /* measures */
 
-aside nav>*,
-.personal>*:not(hr),
+/* aside nav>*,
+.personal>*:not(hr), */
 aside li{
-    padding: 5px 0;
+    padding: 5px 0 5px 5px;
 }
 
-aside nav>figure{
-    width: 30px;
-    margin: 0 5px;
+aside a{
+    align-self: center;
+}
+
+aside figure{
+    width: 40px;
+    padding: 5px;
+}
+
+.playlist,
+nav>.row:first-of-type{
+    margin-top: 10px;
 }
 
 aside i{
@@ -119,9 +123,25 @@ aside i{
     font-size: 1.2rem;
 }
 
-.fa-circle-arrow-down{
-    font-size: 0.6rem;
+.personal figure.flex{
+    justify-content: center;
 }
+
+#icon-small{
+    width: 60%;
+}
+
+#profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #6e6e6e;
+}
+
+/* .fa-circle-arrow-down{
+    font-size: 0.6rem;
+} */
 
 /* measures */
 
@@ -154,6 +174,8 @@ main{
 main ul{
     column-gap: 5%;
     row-gap: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 header{
@@ -317,7 +339,8 @@ footer input{
 
     aside .row{
         justify-content: flex-start;
-        padding-left: 15px;
+        padding-left: 5px;
+        display: flex;
     }
 
     aside i{
