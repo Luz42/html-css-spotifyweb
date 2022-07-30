@@ -213,6 +213,29 @@ main .column{
     font-size: 0.8em;
 }
 
+.card>figure{
+    position: relative;
+}
+
+.card>figure>i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 5rem;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.card:hover i{
+display: block;
+}
+
+.card:hover figure{
+    filter: brightness(0.8);
+
+}
+
 main .text>*{
     padding: 5% 0 ;
 }
@@ -242,6 +265,24 @@ main section{
 
 #artist img{
     border-radius: 50%;
+}
+
+#artist .card:active img{
+    animation-name:rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;   
+}
+
+@keyframes rotate {
+       
+    from {
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 /******** end MAIN ********/
