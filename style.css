@@ -21,19 +21,9 @@ a{
     text-decoration: none;
 }
 
-a:visited,
-a{
-    color: #6e6e6e;
-}
 
 li{
     list-style: none;
-}
-
-h4,
-h1,
-h3{
-    color: white;
 }
 
 
@@ -43,6 +33,27 @@ h3{
     SHARED
  *************************************************/
 
+main p,
+aside i,
+#profile,
+a:visited,
+a{
+    color: #6e6e6e;
+}
+
+main nav,
+main p,
+aside{
+    font-weight: bold;
+}
+
+h4,
+h1,
+h3,
+h6,
+footer{
+    color: white;
+}
 
 /*************************************************
     UTILITIES
@@ -50,7 +61,7 @@ h3{
 
 /* Containers */
 .container {
-    padding: 0 20px;
+    padding: 0 15px;
 }
 /* /Containers */
 
@@ -83,22 +94,18 @@ h3{
  *************************************************/
 .web-app{
     height: 100vh;
-    /* background-color: greenyellow; */
 }
 
 /******** SIDE-BAR ********/
 
 aside{
     background-color: black;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
     font-size: 0.8rem;
-    font-weight: bold;
 }
 
 /* measures */
 
-/* aside nav>*,
-.personal>*:not(hr), */
 aside li{
     padding: 5px 0 5px 5px;
 }
@@ -108,7 +115,7 @@ aside a{
 }
 
 aside figure{
-    width: 40px;
+    width: 30px;
     padding: 5px;
 }
 
@@ -118,7 +125,6 @@ nav>.row:first-of-type{
 }
 
 aside i{
-    color: #6e6e6e;
     align-self: center;
     font-size: 1.2rem;
 }
@@ -132,18 +138,13 @@ aside i{
 }
 
 #profile{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #6e6e6e;
 }
 
-/* .fa-circle-arrow-down{
-    font-size: 0.6rem;
-} */
-
-/* measures */
+/* /measures */
 
 aside nav>figure img:nth-child(2),
 aside .row.playlist,
@@ -166,24 +167,25 @@ main{
     flex-grow: 1;
     position: relative;
     background-color: #141922;
-    padding-top: 8vh;
+    padding-top: 60px;
     overflow-y: auto;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 main ul{
-    column-gap: 5%;
-    row-gap: 5vh;
+    column-gap: 55px;
+    row-gap: 35px;
     display: flex;
     justify-content: center;
+    font-size: 0.8em;
 }
 
 header{
     position: fixed;
     top: 0;
-    height: 8vh;
-    width: calc(100% - 40px);
-    background-color: rgba(75, 74, 74, 0.325);
+    height: 60px;
+    width: calc(100% - 30px);
+    background-color: #080b1290;
     padding-right: 20px;
 }
 
@@ -196,44 +198,48 @@ header .upgrade{
     display: inline-block;
     border-radius: 25px;
     border: solid 1px white;
-    padding: 10px 30px;
+    padding: 10px 50px;
 }
 
+
+/* cards */
 main .column{
     width: calc(100% / 2);
 }
 
 .card{
-    padding: 10px;
+    padding: 5px;
     text-align: center;
+    font-size: 0.8em;
 }
 
 main .text>*{
     padding: 5% 0 ;
 }
+/* /cards */
+
+/* layouts measures */
 
 main .text-title>*{
     padding-left: 10px;
 }
 
+main nav,
 main .text-title,
-main section{
-    padding: 3% 0;
-}
-
 main p{
-    color: #6e6e6e;
-    font-weight: bold;
-    padding: 2% 0;
+    padding: 15px 0;
 }
 
-
-main nav{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 3%;
-    font-weight: bold;
+#played .text-title{
+    padding-bottom: 30px;
 }
+
+main section{
+    padding-bottom: 5%;
+}
+
+/* /layout measures */
+
 /******** end MAIN ********/
 
 /******** PLAYER ********/
@@ -243,25 +249,23 @@ footer{
     position: fixed;
     bottom: 0;
     background-color: #282828;
-    color: white;
 }
 
-/* footer>.row.flex>*{
-    border: dashed red ;
-} */
-
-footer .column{
-    flex-grow: 1;
-}
 
 footer .column.center{
-    flex-grow: 2;
+    width: 40%;
     align-items: center;
     justify-content: space-evenly;
 }
 
-footer .actions{
-    width: 210px;
+.actions,
+.player-left,
+.player-right{
+    width: 200px;
+}
+
+footer .column:not(.column.center){
+    width: 30%;
 }
 
 footer .column>.row{
@@ -284,7 +288,7 @@ footer .column>.row{
 
 /* measures */
 .player-left figure{
-    width: 40px;
+    width: 30px;
 }
 
 .player-left,
@@ -301,27 +305,30 @@ footer .column>.row>*{
 }
 
 footer>.row.flex>*{
-    height: 60px;
+    height: 80px;
  }
 /* /measures */
 
 
 /* time-bar */
 
-.time-bar{
+.time-bar,
+.container-bar{
     width: 100%;
 }
 
-footer .reproduction-bar{
+footer .reproduction-bar,
+.volume-bar{
     width: 100%;
-    height: 5px;
+    height: 4px;
     background-color: white;
     justify-content: flex-start;
     border-radius: 25px;
 }
 
-footer .listening-time{
-    height: 5px;
+footer .listening-time,
+.listening-volume{
+    height: 4px;
     background-color: grey;
     width: 37%;
     border-radius: 25px;
@@ -340,9 +347,10 @@ footer input{
  *************************************************/
 
  @media screen and (min-width: 630px) {
-    
+
     aside nav>figure{
         width: 200px;
+        padding: 15px 70px 15px 10px;
     }
 
     aside nav>figure img:nth-child(2),
@@ -357,14 +365,14 @@ footer input{
 
     aside .row{
         justify-content: flex-start;
-        padding-left: 5px;
+        padding-left: 10px;
         display: flex;
     }
 
     aside i{
         margin-right: 5px;
     }
-    
+
     .fa-circle-arrow-down{
         margin-left: 5px;
     }
@@ -379,29 +387,17 @@ footer input{
         vertical-align: middle;
     }
     header{
-        width: calc(100% - 210px);
+        width: calc(100% - 200px);
     }
 
-    .player-left,
-    .player-right{
-    width: 210px;
-    }
 
     aside hr{
         display: block;
     }
-
-    footer .column{
-        flex-grow: 0;
-    }
-
-    .time-bar{
-        max-width: 630px;
-    }
  }
 
- @media screen and (min-width: 900px) {
-    
+ @media screen and (min-width: 878px) {
+
     main .column{
         width: calc(100% / 4);
     }
@@ -409,9 +405,13 @@ footer input{
  }
 
  @media screen and (min-width: 1200px) {
-    
+
     main .column{
         width: calc(100% / 6);
+    }
+
+    main section{
+        padding-bottom: 2%;
     }
 
  }
@@ -422,24 +422,3 @@ footer input{
     }
 
  }
-
- /* DEBUG */
-
- .debug .height{
-    min-height: 100px;
-    background-color: blanchedalmond;
- }
-
- /* .debug .card{
-
-    background-color: indianred;
- } */
-
- /* .debug .column{
-    border: dashed red;
-
- }
-
- .debug section{
-    border: dashed rgb(0, 255, 13);
- } */
