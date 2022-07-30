@@ -240,6 +240,10 @@ main section{
 
 /* /layout measures */
 
+#artist img{
+    border-radius: 50%;
+}
+
 /******** end MAIN ********/
 
 /******** PLAYER ********/
