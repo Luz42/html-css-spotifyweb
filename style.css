@@ -187,6 +187,7 @@ header{
     width: calc(100% - 30px);
     background-color: #080b1290;
     padding-right: 20px;
+    z-index: 5;
 }
 
 header .upgrade{
@@ -199,6 +200,10 @@ header .upgrade{
     border-radius: 25px;
     border: solid 1px white;
     padding: 10px 50px;
+}
+
+.upgrade a:hover{
+    transform: scale(1.1);
 }
 
 
@@ -434,7 +439,6 @@ footer input{
     header{
         width: calc(100% - 200px);
     }
-
 
     aside hr{
         display: block;
