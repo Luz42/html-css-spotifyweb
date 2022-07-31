@@ -52,7 +52,8 @@ h1,
 h3,
 h6,
 footer,
-a:hover:not(section a),
+a:hover:not(main a),
+main nav li:hover a,
 footer .icons>*:hover,
 .playlist a.flex:hover .fa-circle-plus{
     color: white;
@@ -218,7 +219,7 @@ footer .fa-circle-play:hover{
 
 main li>hr{
 margin: 3px auto;
-border: green 1px solid;
+border: 1px solid rgb(6, 200, 6);
 width: 35%;
 display: none;
 }
@@ -301,11 +302,11 @@ main section{
     animation-name:rotate;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;   
+    animation-iteration-count: infinite;
 }
 
 @keyframes rotate {
-       
+
     from {
         transform: rotate(0deg);
     }
@@ -365,6 +366,26 @@ footer .column>.row{
     text-decoration: underline;
 }
 
+.point-bar{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: grey;
+    transform: scale(4);
+    display: none;
+}
+
+.time-bar:hover .point-bar,
+.volume-bar:hover .point-bar{
+    display: block;
+}
+
+.time-bar:hover .listening-time,
+.volume-bar:hover .listening-volume{
+    background-color: rgb(6, 200, 6);
+}
+
+
 /* measures */
 .player-left figure{
     width: 30px;
@@ -379,7 +400,7 @@ footer .column>.row{
     padding: 0 10px;
 }
 
-footer .column>.row>*{
+footer .column>.row>*:not(.reproduction-bar){
     padding: 0 5px;
 }
 
