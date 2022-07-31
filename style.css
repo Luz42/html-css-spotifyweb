@@ -51,7 +51,10 @@ h4,
 h1,
 h3,
 h6,
-footer{
+footer,
+a:hover:not(section a),
+footer .icons>*:hover,
+.playlist a.flex:hover .fa-circle-plus{
     color: white;
 }
 
@@ -110,7 +113,8 @@ aside li{
     padding: 5px 0 5px 5px;
 }
 
-aside a{
+aside a,
+aside a>span{
     align-self: center;
 }
 
@@ -157,6 +161,8 @@ aside hr{
     width: 90%;
     margin: 3px auto;
     display: none;
+    background-color: #6e6e6e;
+    border-radius: 25px;
 }
 
 /******** end SIDE-BAR ********/
@@ -202,8 +208,27 @@ header .upgrade{
     padding: 10px 50px;
 }
 
-.upgrade a:hover{
+.upgrade a:hover,
+footer .fa-circle-play:hover{
     transform: scale(1.1);
+}
+
+
+
+
+main li>hr{
+margin: 3px auto;
+border: green 1px solid;
+width: 35%;
+display: none;
+}
+
+main li:hover hr{
+    display: block;
+}
+
+main li:hover main>nav{
+    padding-top: 14px;
 }
 
 
@@ -334,6 +359,10 @@ footer .column>.row{
 .time-bar
 {
     font-size: 0.7rem;
+}
+
+.listen-song a:nth-of-type(2):hover{
+    text-decoration: underline;
 }
 
 /* measures */
