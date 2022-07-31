@@ -59,6 +59,34 @@ footer .icons>*:hover,
     color: white;
 }
 
+/* underline MAIN animation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(6, 200, 6);
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 25%;
+    background-color:  rgb(6, 200, 6) ;
+    transform-origin: bottom center;
+    transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: center bottom;
+}
+/* /underline MAIN animation*/
+
+  
+
 /*************************************************
     UTILITIES
  *************************************************/
@@ -166,6 +194,34 @@ aside hr{
     border-radius: 25px;
 }
 
+/* SIDE-BAR left-line animation*/
+
+.hover-leftline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(6, 200, 6);
+}
+  
+.hover-leftline-animation:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    transform: scaleY(0);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color:  rgb(6, 200, 6) ;
+    transform-origin: center left;
+    transition: transform 0.5s ease-out;
+}
+  
+.hover-leftline-animation:hover:after {
+    transform: scaleY(1);
+    transform-origin: center left;
+}
+  
+/* /SIDE-BAR left-line animation*/
+
 /******** end SIDE-BAR ********/
 
 /******** MAIN ********/
@@ -228,8 +284,8 @@ main li:hover hr{
     display: block;
 }
 
-main li:hover main>nav{
-    padding-top: 14px;
+main li a{
+    padding-bottom: 5px;
 }
 
 
