@@ -55,7 +55,8 @@ footer,
 a:hover:not(main a),
 main nav li:hover a,
 footer .icons>*:hover,
-.playlist a.flex:hover .fa-circle-plus{
+.playlist a.flex:hover .fa-circle-plus,
+.hover-leftline-animation:hover a{
     color: white;
 }
 
